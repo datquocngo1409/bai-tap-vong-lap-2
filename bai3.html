@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    function upleft(n) {
+      for (var i=0;i<n;i++){
+        for (var j=n-i;j>0;j--) {
+          document.write("*");
+        }
+        document.writeln("<br>");
+      }
+    }
+
+    function upright(n) {
+      for (var i=0;i<n;i++){
+        for (var k=i;k>0;k--){
+          document.writeln(".");
+        }
+        for (var j=n-i;j>0;j--) {
+          document.write("*");
+        }
+        document.writeln("<br>");
+      }
+    }
+
+    function downleft(n) {
+      for (var i=0;i<n;i++){
+        for (var j=i+1;j>0;j--) {
+          document.write("*");
+        }
+        document.writeln("<br>");
+      }
+    }
+
+    function downright(n) {
+      for (var i=0;i<n;i++){
+        for (var k=n-i-1;k>0;k--){
+          document.writeln(".");
+        }
+        for (var j=i+1;j>0;j--) {
+          document.write("*");
+        }
+        document.writeln("<br>");
+      }
+    }
+    var n=prompt("Nhập N: ");
+    upleft(n);
+    upright(n);
+    downleft(n);
+    downright(n);
+  </script>
+</body>
+</html>

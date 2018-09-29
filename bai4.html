@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    function hinhchunhat(m,n) {
+      for (var i=0;i<m;i++) {
+        for (var j = 0; j < n; j++) {
+          if (i == 0 || i == m - 1) document.write("*");
+          else if (j == 0 || j == (n-1)) document.write("*");
+          else document.write("..");
+        }
+        document.writeln("<br>");
+      }
+    }
+    var dai,rong;
+    dai=prompt("Nhập chiều dài: ",0);
+    rong=prompt("Nhập chiều rộng: ",0);
+    hinhchunhat(rong,dai);
+  </script>
+</body>
+</html>

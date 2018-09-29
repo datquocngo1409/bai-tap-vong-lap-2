@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    var soTienVay, laiXuat, soThangVay;
+    soTienVay=prompt("Nhập số tiền đã vay: ",0);
+    laiXuat=prompt("Nhập lãi xuất 1 tháng (%): ",0);
+    soThangVay=prompt("Nhập số tháng đã vay: ",0);
+    var tongTien=parseFloat(Math.pow(parseFloat(1+parseFloat(laiXuat)),parseInt(soThangVay)));
+    tongTien*=parseInt(soTienVay);
+    alert("Tổng số tiền phải trả : "+tongTien);
+  </script>
+</body>
+</html>
